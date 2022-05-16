@@ -1,0 +1,50 @@
+@import '../base/settings';
+
+.search-div{
+    width: 20vw;
+    
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.rooms-div{
+    margin-top: 3rem;
+    
+    width: 80vw;
+    border: 1px solid $light-grey;
+    overflow-y: scroll
+}
+
+.home-div{
+    border: 1px solid $light-grey;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+}
+
+.search-and-rooms-div{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .search-and-rooms-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .search-div{
+        width: 90vw;
+        height: 100%;
+        margin: 1rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+    }
+    .rooms-div{
+        margin-top: 3rem;
+        height: 100%;
+        width: 80vw;
+        border: 1px solid $light-grey;
+        overflow-y: scroll
+    }
+  }

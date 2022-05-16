@@ -1,0 +1,13 @@
+@import '../../../styles/base/settings';
+
+.green, .green:hover, .green:active, .green:visited {
+    background-color: $green !important;
+    color:$white;
+    font-family: 'Luckiest Guy', cursive;
+}
+.orange, .orange:hover, .orange:active, .orange:visited {
+    background-color: $orange !important;
+    color:$white;
+    font-family: 'Luckiest Guy', cursive;
+
+}

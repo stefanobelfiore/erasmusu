@@ -1,0 +1,11 @@
+@import '../../styles/base/settings';
+
+
+.no-results{
+    color:$green;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
