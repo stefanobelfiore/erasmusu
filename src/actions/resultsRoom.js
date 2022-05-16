@@ -11,7 +11,6 @@ export const getAllResultsIds = () => {
     axios
       .get(`${baseUrlToFixTemporaryCorsProblem}${endPoint}`)
       .then((res) => {
-        console.log(res.data.data);
         dispatch(setAllResultsIds(res.data.data));
       })
       .catch(function (error) {
@@ -44,13 +43,13 @@ export const getThirdyResults = (arrayRooms, orderBy) => {
 
       });
     }
-    console.log(string, "stringdeurlarray");
+   
     axios
       .get(`${baseUrlToFixTemporaryCorsProblem}${string}`)
       .then((res) => {
-        console.log(`${baseUrlToFixTemporaryCorsProblem}${string}`)
-        console.log(res);
-        console.log(res.data.data.homecards)
+      
+       
+        console.log(res.data.data.homecards) //array después del filter
         if(orderBy === "Ascending"){
           dispatch(setResults(sortByKey(res.data.data.homecards, 'pricePerMonth')));
         }

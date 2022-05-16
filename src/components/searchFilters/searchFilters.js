@@ -10,7 +10,7 @@ import { getResultsForType } from "../../actions/resultsRoom";
 const SearchFilters = () => {
 
   const dataNews = useSelector((state) => state.results.AllResultsListIds);
-  console.log(dataNews);
+  console.log(dataNews); //tot descarga
   const dispatch = useDispatch();
 
   const [startArray, setstartArray] = useState(0);
@@ -32,8 +32,6 @@ const SearchFilters = () => {
     e.preventDefault();
     dispatch(getThirdyResults(selectArray(dataNews),orderBy));
     dispatch(getResultsForType(type))
-    console.log(sortByKey(selectArray(dataNews),'pricePerMonth'))
-    console.log(type, orderBy);
   };
 
 
